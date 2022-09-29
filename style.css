@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+#container {
+  width: 1000px;
+  height: 100%;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  background-color: rgb(155, 222, 243);
+  height: 150px;
+  display: flex;
+  padding: 0px 25px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.logo {
+    background-image: url("./img/CatLogo.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 150px;
+    }
+
+.main {
+  background-color: rgb(230, 227, 47);
+ height: 100%;
+}
+
+.logo,
+.refToCats,
+.refToDogs,
+.siteName {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.refToCats a,
+.refToDogs a {
+   color: #fff;
+}
+
+.linkMenu {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 10px -10px 20px #000;
+}
+
+.siteName a {
+  color: rgb(0, 0, 0);
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+}

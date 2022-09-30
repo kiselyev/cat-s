@@ -2,11 +2,12 @@
   box-sizing: border-box;
 }
 #container {
-  width: 1440px;
+  width: 1000px;
   height: 100%;
   background-color: #ccc;
   display: flex;
   flex-direction: column;
+  margin: 10px 0 0 0;
 }
 
 .header {
@@ -15,6 +16,7 @@
   display: flex;
   padding: 0px 25px;
   justify-content: space-between;
+  border: 2px solid #000;
 }
 
 .main {
@@ -28,6 +30,21 @@
   flex-direction: row;
   align-content: flex-start;
   gap: 25px;
+  border: 2px solid #000;
+  border-top: none;
+}
+
+.main2 {
+  display: flex;
+  justify-content: flex-start;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 254);
+  height: 100%;
+  padding: 25px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+  gap: 25px;
 }
 
 .logo {
@@ -37,11 +54,19 @@
   width: 150px;
 }
 
+.logo2 {
+  background-image: url("./img/dogLogo.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 150px;
+}
+
 .logo,
+.logo2,
 .refToCats,
 .refToDogs,
 .siteName {
-  height: 150px;
+  height: 146px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,40 +89,64 @@
   color: rgb(0, 0, 0);
 }
 
-.img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6 {
+.img {
   width: 200px;
   height: 120px;
+  border-radius: 10px;
   background-repeat: no-repeat;
-  box-shadow: 10px 10px 15px rgb(134, 128, 128);
+  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
-.img1 {
+.img:hover {
+  box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.cat1 {
   background-image: url("./img/blacky.jpg");
 }
 
-.img2 {
+.cat2 {
   background-image: url("./img/catInBox.jpg");
 }
 
-.img3 {
+.cat3 {
   background-image: url("./img/k3 1.jpg");
 }
 
-.img4 {
+.cat4 {
   background-image: url("./img/k4 1.jpg");
 }
 
-.img5 {
+.cat5 {
   background-image: url("./img/k5 1.jpg");
 }
 
-.img6 {
+.cat6 {
   background-image: url("./img/k6 1.jpg");
+}
+
+.dog1 {
+  background-image: url("./img/p1 1.jpg");
+}
+
+.dog2 {
+  background-image: url("./img/p2\ 1.jpg");
+}
+
+.dog3 {
+  background-image: url("./img/p3 1.jpg");
+}
+
+.dog4 {
+  background-image: url("./img/p4 1.jpg");
+}
+
+.dog5 {
+  background-image: url("./img/p5 1.jpg");
+}
+
+.dog6 {
+  background-image: url("./img/p6 1.jpg");
 }
 
 body,
@@ -109,4 +158,5 @@ html {
 body {
   display: flex;
   justify-content: center;
+  background-color: #bfdef3;
 }
